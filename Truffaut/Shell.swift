@@ -22,8 +22,7 @@ class Shell: NSObject {
         }
         
         static var ruby: String {
-            return UserPreference.customRubyPath ?? "/usr/local/bin/ruby"
-        }
+            return UserPreference.customRubyPath ?? "/usr/bin/ruby"
     }
     
     public static func call(command: String, arguments: [String] = [], currentDirectoryPath: String? = nil) throws -> String {
